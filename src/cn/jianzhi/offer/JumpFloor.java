@@ -17,11 +17,11 @@ public class JumpFloor {
      * @param target
      * @return
      */
-    public int jumpFloor(int target) {
+    public int JumpFloor(int target) {
         if (target <= 0) return 0;
         else if (target <= 2) return target;
         else
-            return jumpFloor(target - 1) + jumpFloor(target - 2);
+            return JumpFloor(target - 1) + JumpFloor(target - 2);
     }
 
     /**
@@ -29,7 +29,7 @@ public class JumpFloor {
      * @param target
      * @return
      */
-    public int jumpFloor2(int target) {
+    public int JumpFloor2(int target) {
         if (target <= 0) return 0;
         if (target <= 2) return target;
         int n = 0;
