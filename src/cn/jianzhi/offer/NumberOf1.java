@@ -8,6 +8,11 @@ package cn.jianzhi.offer;
  * 解决思路
  * 采用位运算
  * n & (n-1) 去掉最后一个1
+ * n       : 10110100
+ * n-1     : 10110011
+ * n&(n-1) : 10110000
+ * <p>
+ * O(logM) 时间复杂度解法，其中 M 表示 1 的个数。
  */
 public class NumberOf1 {
     public int NumberOf1(int n) {
@@ -19,4 +24,7 @@ public class NumberOf1 {
         return count;
     }
 
+    public int NumberOf12(int n) {
+        return Integer.bitCount(n);
+    }
 }
